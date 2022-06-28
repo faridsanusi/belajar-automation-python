@@ -21,4 +21,6 @@ driver.find_element(By.CSS_SELECTOR, '#login > button').click()
 time.sleep(1)
 driver.get(url_add_remove_element)
 driver.find_element(By.CSS_SELECTOR, '#content > div > button').click()
+time.sleep(1)
+driver.find_element(By.XPATH, '//*[@id="content"]/div/button').click()
 

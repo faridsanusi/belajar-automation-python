@@ -22,5 +22,6 @@ with sync_playwright() as pw:
     page.goto(url_add_remove_element)
     # click by css selector
     page.wait_for_selector('#content > div > button').click()
+    page.wait_for_selector('//*[@id="content"]/div/button').click()
 
     page.pause()
